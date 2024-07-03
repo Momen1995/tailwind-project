@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/personalize",
-      "destination": "/personalize.html"
+      "source": "/news",
+      "destination": "/news.html"
     }
   ]
 }
