@@ -1,5 +1,5 @@
 {
   "routes": [
-    { "src": "/news", "dest": "/about.html" }
+    { "src": "/news", "dest": "/news.html" }
   ]
 }
