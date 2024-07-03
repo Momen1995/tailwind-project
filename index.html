@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlTag">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>ticker AI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-white dark:bg-gray-900">
+    <header class="w-11/12 mx-auto">
+      <nav class="flex items-center justify-between py-3">
+        <div class="flex gap-1 items-center md:gap-3">
+          <img src="./assets/logo 1.png" alt="logo" class="w-10 md:w-fit" />
+          <p class="text-[8px] md:text-xs  dark:text-white">
+            A Mark Cuban Company<br />
+            AI-based Financial Market News Aggregator
+          </p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <a href="news.html">
+            <button
+              class="bg-[#5677ac] px-4 py-2 rounded-md text-white transition hover:bg-[#42669e] hover:scale-105 hover:translate-y-1  dark:text-white"
+            >
+              Personalize News
+            </button>
+          </a>
+          <div
+            class="bg-[#5657ac] hover:bg-[#42669e] flex items-center justify-center size-9 font-semibold rounded-2xl md:text-base text-xs transition-all hover:cursor-pointer hover:scale-105"
+          >
+            IK
+          </div>
+          <button class="w-7 h-7" id="switch">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              class="size-6  dark:stroke-white"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <section
+        class="flex flex-col gap-4 items-center justify-center bg-[url('./assets/bg.png')] bg-cover h-[150px] md:h-[400px]"
+      >
+        <h1 class="text-3xl md:text-5xl font-bold text-white">tickerAI</h1>
+        <div
+          class="flex items-center gap-2 w-2/3 md:w-[500px] bg-white p-1 md:p-2 rounded hover:ring-2"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Search any market topic..."
+            class="w-full outline-none md:p-1"
+          />
+        </div>
+        <p class="text-[14px] text-gray-300">
+          There are 6 articles available for your preferences
+        </p>
+      </section>
+    </header>
+
+    <main>
+      <section class="w-10/12 mx-auto mt-8 grid grid-cols-12 gap-8">
+        <!-- All news section -->
+        <div class="col-span-12 md:col-span-9">
+          <div
+            class="flex items-center justify-between border-b md:border-b-[3px] border-black"
+          >
+            <h3 class="text-lg md:text-2xl font-semibold text-[#333333]  dark:text-white">
+              All News
+            </h3>
+            <div class="flex gap-2 items-center  dark:text-white">
+              <p>Filter by:</p>
+              <h6 class="font-bold">Stocks</h6>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+
+          <h2 class="my-4 text-2xl font-semibold text[#333333]  dark:text-white">Individual Stocks</h2>
+
+          <!-- card start -->
+           <div class="news">
+            <img src="./assets/one.png" alt="" class="w-full h-44 object-cover md:h-fit lg:size-[200px]">
+            <div class="space-y-3 mt-4 md:mt-0">
+              <div>
+                <span class="caption">Dow jones</span>
+                <span class="caption">Nasdaq</span>
+                <span class="caption">S & P 500</span>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-400">Nzd/usd forex technical analysis - traders will be monitoring fed for future rate hike clues</h3>
+              <p class="text-[16px] dark:text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+              <div class="flex gap-7 dark:text-white">
+                <p>06 September 2022</p>
+                <p>By: <span>Shouvik Nath</span></p>
+              </div>
+            </div>
+           </div>
+           <div class="news">
+            <img src="./assets/two.png" alt="" class="w-full h-44 object-cover md:h-fit lg:size-[200px]">
+            <div class="space-y-3 mt-4 md:mt-0">
+              <div>
+                <span class="caption">Dow jones</span>
+                <span class="caption">Nasdaq</span>
+                <span class="caption">S & P 500</span>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-400">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</h3>
+              <p class="text-[16px] dark:text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+              <div class="flex gap-7 dark:text-white">
+                <p>06 September 2022</p>
+                <p>By: <span>Shouvik Nath</span></p>
+              </div>
+            </div>
+           </div>
+
+           <div class="news">
+            <img src="./assets/three.png" alt="" class="w-full h-44 object-cover md:h-fit lg:size-[200px]">
+            <div class="space-y-3 mt-4 md:mt-0">
+              <div>
+                <span class="caption">Dow jones</span>
+                <span class="caption">Nasdaq</span>
+                <span class="caption">S & P 500</span>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-400">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</h3>
+              <p class="text-[16px] dark:text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+              <div class="flex gap-7 dark:text-white">
+                <p>06 September 2022</p>
+                <p>By: <span>Shouvik Nath</span></p>
+              </div>
+            </div>
+           </div>
+        </div>
+
+        <!-- feature section -->
+        <div class="col-span-12 md:col-span-3">
+          <h3 class="text-lg md:text-2xl font-semibold text-[#333333] border-b md:border-b-[3px] border-black dark:text-white">
+              FEATURE
+          </h3>
+             <h2 class="my-4 text-2xl font-semibold text[#333333] dark:text-white">Daily Rundowns</h2>
+
+             <div class="border space-y-3 md:space-y-5 p-3">
+                <div>
+                  <h4 class="font-semibold dark:text-white">Earnings:</h4>
+                  <div class="flex gap-2 flex-wrap mt-2">
+                    <span class="tag">Csan</span>
+                    <span class="tag">Alya</span>
+                    <span class="tag">Gato</span>
+                    <span class="tag">Css</span>
+                    <span class="tag">VZLA</span>
+                    <span class="tag">MFH</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="font-semibold dark:text-white">Movers:</h4>
+                  <div class="flex gap-3 flex-wrap mt-2">
+                    <span class="tag">Csan</span>
+                    <span class="tag">Alya</span>
+                    <span class="tag">Gato</span>
+                    <span class="tag">Css</span>
+                    <span class="tag">VZLA</span>
+                    <span class="tag">MFH</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="font-semibold dark:text-white">Technicals::</h4>
+                  <div class="flex gap-3 flex-wrap mt-2">
+                    <span class="tag">Csan</span>
+                    <span class="tag">Alya</span>
+                    <span class="tag">Gato</span>
+                    <span class="tag">Css</span>
+                    <span class="tag">VZLA</span>
+                    <span class="tag">MCH</span>
+                    <span class="tag">SHOP</span>
+                    <span class="tag">USO</span>
+                    <span class="tag">SENDG</span>
+                  </div>
+                </div>
+             </div>
+
+             <div class="mt-6 space-y-5">
+              <div>
+                <img src="./assets/four.png" alt="" class="w-full object-cover">
+                <h3 class="text-center py-3 dark:text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </h3>
+              </div>
+              <div>
+                <img src="./assets/four.png" alt="" class="w-full object-cover">
+                <h3 class="text-center py-3 dark:text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </h3>
+              </div>
+              <div>
+                <img src="./assets/four.png" alt="" class="w-full object-cover">
+                <h3 class="text-center py-3 dark:text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </h3>
+              </div>
+             </div>
+
+        </div>
+      </section>
+    </main>
+
+     <script>
+    const html = document.getElementById("htmlTag");
+    document.getElementById("switch").addEventListener("click",function(){
+      console.log("click")
+      html.classList.toggle("dark")
+    })
+  </script>
+  </body>
+</html>

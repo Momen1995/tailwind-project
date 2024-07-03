@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlTag">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="main.css" />
+  <title>Document</title>
+</head>
+<body class="bg-white dark:bg-gray-900">
+  <header>
+    <header class="w-11/12 mx-auto">
+      <nav class="flex items-center justify-between py-3">
+        <div class="flex gap-1 items-center md:gap-3">
+          <a href="index.html"><img src="./assets/logo 1.png" alt="logo" class="w-10 md:w-fit" /></a>
+          <p class="text-[8px] md:text-xs dark:text-white">
+            A Mark Cuban Company<br />
+            AI-based Financial Market News Aggregator
+          </p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <a href="index.html">
+            <button
+              class="bg-[#5677ac] px-4 py-2 rounded-md text-white transition hover:bg-[#42669e] hover:scale-105 hover:translate-y-1"
+            >
+              Personalize News
+            </button>
+          </a>
+          <div
+            class="bg-[#5657ac] hover:bg-[#42669e] flex items-center justify-center size-9 font-semibold rounded-2xl md:text-base text-xs transition-all hover:cursor-pointer hover:scale-105"
+          >
+            IK
+          </div> 
+          <button class="w-7 h-7" id="switch">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              class="size-6 dark:stroke-white"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+       <h3 class="text-lg md:text-2xl font-semibold text-[#333333] border-b md:border-b-[3px] border-black mt-4 dark:text-white">
+              Personolize your news
+       </h3>
+
+       <section class="w-full md:w-8/12 mx-auto bg-[#ffffff] shadow-xl p-4 dark:bg-gray-900 " >
+        <h3 class="text-center text-2xl font-semibold mt-6 dark:text-white">Select Your Market</h3>
+        <div class="text-center mt-8 space-y-6">
+          <p class="bg-[#E6EBF3] text-xl font-semibold py-2 rounded-3xl hover:bg-blue-300">Stocks</p>
+          <p class="bg-[#E6EBF3] text-xl font-semibold py-2 rounded-3xl hover:bg-blue-300">Crypto</p>
+          <p class="bg-[#E6EBF3] text-xl font-semibold py-2 rounded-3xl hover:bg-blue-300">Economy & Business</p>
+          <p class="bg-[#E6EBF3] text-xl font-semibold py-2 rounded-3xl hover:bg-blue-300">Commodities | Forex</p>
+          <p class="text-xl font-semibold dark:text-white">Fixed Income</p>
+        </div>
+        <div class="flex justify-center my-8 w-full bg-blue-600 rounded">
+          <button class=" px-4 py-2 rounded text-white">Continue</button>
+        </div>
+       </section>
+    </header>
+  </header>
+
+  <script>
+    const html = document.getElementById("htmlTag");
+    document.getElementById("switch").addEventListener("click",function(){
+      console.log("click")
+      html.classList.toggle("dark")
+    })
+  </script>
+
+</body>
+</html>
