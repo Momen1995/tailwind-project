@@ -1,14 +1,12 @@
+import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
-    // Output directory for build files
-    outDir: "dist",
     rollupOptions: {
-      // Input configuration specifying each HTML file to be built
       input: {
-        main: "index.html",
-        news: "news.html",
+        main: resolve(__dirname, "index.html"),
+        news: resolve(__dirname, "news.html"),
       },
     },
   },
