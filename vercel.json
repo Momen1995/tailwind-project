@@ -1,8 +1,5 @@
 {
-  "rewrites": [
-    {
-      "source": "/news",
-      "destination": "/news.html"
-    }
+  "routes": [
+    { "src": "/news", "dest": "/about.html" }
   ]
 }
